@@ -1,0 +1,42 @@
+{
+  "started": "2026-01-01",
+  "projects": [
+    {
+      "id": "lab",
+      "name": "auto-lab",
+      "desc": "本页。索引各项目并实时探测存活。",
+      "url": "https://example.com/lab",
+      "port": 8810,
+      "created": "2026-01-01",
+      "tags": ["meta"]
+    },
+    {
+      "id": "demo-web",
+      "name": "demo-web",
+      "desc": "示例：一个静态站点，只监听本机端口。",
+      "url": "https://example.com/demo",
+      "port": 8080,
+      "created": "2026-01-02",
+      "tags": ["demo"]
+    },
+    {
+      "id": "demo-api",
+      "name": "demo-api",
+      "desc": "示例：跑在另一台机器上的服务，指定 probe_host 才能探到。",
+      "url": "https://example.com/api",
+      "port": 9000,
+      "probe_host": "<SERVER_IP>",
+      "created": "2026-01-03",
+      "tags": ["demo", "remote"]
+    },
+    {
+      "id": "demo-remote",
+      "name": "demo-remote",
+      "desc": "示例：后端不在本机，port 留空则状态显示为灰色未测。",
+      "url": "https://example.com/remote",
+      "port": null,
+      "created": "2026-01-04",
+      "tags": ["demo"]
+    }
+  ]
+}
